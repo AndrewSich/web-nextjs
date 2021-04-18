@@ -1,0 +1,94 @@
+     /*=========== NAVBAR ===============*/
+.navbar {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 3.5em;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+	display: flex;
+}
+.navMenu {
+	background-color: ;
+	margin-top: 0.75em;
+	margin-left: 0.75em;
+	height: 75%;
+	width: 7.5%;
+	overflow: hidden;
+}
+	.navMenuImg {
+		height: 1.75em;
+		margin-top: 0.1em;
+	}
+
+.navBrand {
+	background-color: ;
+	height: 75%;
+	width: 30%;
+	margin-top: 0.75em;
+	margin: 0.75em auto; /*margin-left: 0.5em*/
+	overflow: hidden;
+}
+	.navBrandImg {
+		width: 1.75em;
+		height: 2em;
+	}
+	.navBrandWord {
+		margin-left: 0.2em;
+		height: 1.75em;
+		width: 4.5em;
+	}
+
+.navSign {
+	background-color: ;
+	margin-top: 0.75em;
+	margin-right: 0.5em;
+	height: 75%;
+	width: 7.5%;
+	overflow: hidden;
+}
+	.navSignImg {
+		height: 1.75em;
+		margin-top: 0.1em;
+	}
+	/* MODAL */
+	.signModal {
+		width: 90%;
+		height: 30em;
+		background-color: #F2F5F8;
+		margin: auto;
+		margin-top: 3em;
+		outline: none;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+		.signModalH {
+			overflow: hidden;
+			border-bottom: 1px solid rgba(0,0,0,0.3);
+		}
+		.signModalH h2 {
+			display: inline-block;
+			background-color: ;
+			margin-left: 1em;
+		}
+		.xClose {
+			display: inline-block;
+			height: 1.5em;
+			width: 1.5em;
+			background-color: #FFF;
+			border-radius: 100%;
+			float: right;
+			margin:  1.25em 1em;
+		}
+		.signModalB {
+			max-width: 100%;
+			height: 20em;
+		}
+		.signModalF {
+			max-width: 65%;
+			display: block;
+			margin: 0 auto;
+		}
+		.signModal p {
+			color: #8C8D8F;
+			text-align: center;
+		}
