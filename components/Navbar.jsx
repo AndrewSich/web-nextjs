@@ -1,24 +1,28 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal'
 import styles from '../styles/components/navbar.module.css'
+import { Sidebar } from '../components/Sidebar'
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
-	
+	const [sbIsOpen, sbSetIsOpen] = useState(false)
+
 	return (
 		<div>
 			<nav className={styles.navbar}>
 				<div className={styles.navMenu}>
-					<a href='#'>
+					<a onClick={() => sbIsOpen(true)}>
 						<img alt='' src='/components/navbar/menu.svg' className={styles.navMenuImg} />
 					</a>
 				</div>
+
 				<div className={styles.navBrand}>
 					<a href='#'>
 						<img alt='' src='/components/navbar/brand.png' className={styles.navBrandImg} />
 						<img alt='' src='/components/navbar/brand-word.png' className={styles.navBrandWord} />
 					</a>
 				</div>
+
 				<div className={styles.navSign}>
 					<a onClick={() => setIsOpen(true)}>
 						<img href='#Home' alt='' src='/components/navbar/log-in.svg' className={styles.navSignImg} />
@@ -46,6 +50,8 @@ export const Navbar = () => {
 
 				</div>
 			</nav>
+
+			<Sidebar isOpen={sbIsOpen} />
 		</div>
 	)
 }
