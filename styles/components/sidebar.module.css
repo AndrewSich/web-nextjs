@@ -1,0 +1,84 @@
+/*=========== SIDEBAR ============*/
+.sidebar {
+	background-color: #FFF;
+	width: 80%;
+	max-width: 375px;
+	height: 100%;
+	position: absolute;
+	margin-left:;
+	top: 0;
+	border-right: 1px solid rgba(0,0,0,0.6);
+	box-shadow: 2px 0px 3px rgba(0,0,0,0.5);
+	overflow: ;
+}
+	.sidebarXClose {
+		display: block;
+		height: 1.5em;
+		width: 1.5em;
+		background-color: #F2F5F8;
+		border-radius: 100%;
+		margin: 0.75em 1em 0 auto;
+	}
+.sidebarBrand {
+	background-color: ;
+	width: 100%;
+	height: 7.5em;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.sBContainer {
+	background-color: ;
+	width: 70%;
+	height: 2.5em;
+	overflow: hidden;
+	text-align: center;
+	margin: -0.75em auto;
+}
+	.sidebarBrandImg {
+		width: 1.75em;
+		height: 2em;
+	}
+	.sidebarBrandWord {
+		width: 5.25em;
+		height: 1.5em;
+		margin-left: 0.5em;
+	}
+
+
+/*=====WEB VERSION=====*/
+@media (min-width: 992px) {
+	.sidebar {
+		position: fixed;
+		top: 0;
+		width: 15em;
+		max-width: 275px;
+
+		border: 1px solid rgba(0,0,0,0.1);
+		box-shadow: none;
+	}
+		.sidebarXClose {
+			display: none;
+		}
+
+	.sidebarBrand {
+		top: 0;
+		width: 100%;
+		height: 5em;
+		max-height: 75px;
+	}
+	.sBContainer {
+		width: 80%;
+		height: 3.25em;
+		margin: 0.75em auto;
+		padding-top: 0.25em;
+	}
+		.sidebarBrandImg {
+			width: 2.25em;
+			height: 2.75em;
+		}
+		.sidebarBrandWord {
+			width: 5.75em;
+			height:1.75em;
+			margin-left: 0.5em;
+		}
+}
