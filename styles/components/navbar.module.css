@@ -1,4 +1,4 @@
-     /*=========== NAVBAR ===============*/
+/*=========== NAVBAR ===============*/
 .navbar {
 	background-color: #FFFFFF;
 	width: 100%;
@@ -92,3 +92,35 @@
 			color: #8C8D8F;
 			text-align: center;
 		}
+
+
+/*=====WEB VERSION=====*/
+@media (min-width: 992px) {
+	.navMenu {
+		display: none;		
+	}
+	.navBrand {
+		display: none;
+		margin: 1em;
+		margin-top: 0.75em;
+		margin-left: 3em;
+		background-color:;
+		width: 15%;
+		margin-right: 10em;
+	}
+		.navBrandImg {
+			width: 2.25em;
+			height: 2.25em;
+		}
+		.navBrandWord {
+			margin-left: 0.5em;
+			height: 1.75em;
+			width: 6em;
+		}
+	.navSign {
+		background-color:;
+		width: 2%;
+		margin-right: 1.5em;
+		margin-left: auto;
+	}
+}
