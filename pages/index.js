@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/Navbar'
+import { Main } from '../components/main/Main'
 // import { Sidebar } from '../components/Sidebar'
 
 export default function Home() {
@@ -14,9 +15,7 @@ export default function Home() {
       <Navbar />
 
 
-      <main>
-        <h1 className={styles.word}>Welcome to Levxa.com</h1>
-      </main>
+      <Main />
 
     </div>
   )

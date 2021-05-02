@@ -1,11 +1,16 @@
 /*=========== NAVBAR ===============*/
 .navbar {
-	background-color: #FFFFFF;
+	/*background-color: salmon;*/
+	background-color: white;
 	width: 100%;
 	height: 3.5em;
 	overflow: hidden;
 	border-bottom: 1px solid rgba(0,0,0,0.08);
 	display: flex;
+
+	/* FOR FIXED NAVBAR */
+	position: fixed;
+	top: 0;
 }
 .navMenu {
 	background-color: ;
@@ -96,19 +101,27 @@
 
 /*=====WEB VERSION=====*/
 @media (min-width: 992px) {
+	/* Navbar for web */
+	.navbar {
+		left: 15em;
+		width: auto;
+		right: 0;
+		height: 3em;
+	}
+
 	.navMenu {
 		display: none;		
 	}
 	.navBrand {
 		display: none;
-		margin: 1em;
+		/*margin: 1em;
 		margin-top: 0.75em;
 		margin-left: 3em;
 		background-color:;
 		width: 15%;
-		margin-right: 10em;
+		margin-right: 10em;*/
 	}
-		.navBrandImg {
+		/*.navBrandImg {
 			width: 2.25em;
 			height: 2.25em;
 		}
@@ -116,11 +129,65 @@
 			margin-left: 0.5em;
 			height: 1.75em;
 			width: 6em;
-		}
+		}*/
 	.navSign {
 		background-color:;
-		width: 2%;
-		margin-right: 1.5em;
-		margin-left: auto;
+		width: 2em;
+		margin-right: 1em;
+		/*margin-left: auto;*/
 	}
+}
+
+
+
+
+
+/*=========== SIDEBAR ============*/
+.sidebar {
+	background-color: #FFF;
+	width: 80%;
+	max-width: 375px;
+	height: 100%;
+	position: absolute;
+	left: -80%;
+	top: 0;
+	border-right: 1px solid rgba(0,0,0,0.6);
+	box-shadow: 2px 0px 3px rgba(0,0,0,0.5);
+	overflow: hidden;
+
+	/* TRANSITION */
+	transition: all 6s ease;
+	-webkit-transition: all 6s;
+}
+	.sidebar.active {
+		left: 0;
+		position: fixed;
+	}
+	.sidebarXClose {
+		display: block;
+		height: 1.5em;
+		width: 1.5em;
+		background-color: #F2F5F8;
+		border-radius: 100%;
+		margin: 0.75em 1em 0 auto;
+	}
+/*=====WEB VERSION=====*/
+@media (min-width: 992px) {
+	.sidebar {
+		position: fixed;
+		top: 0;
+		width: 15em;
+		max-width: 275px;
+		left: 80%;
+
+		border: 1px solid rgba(0,0,0,0.1);
+		box-shadow: none;
+		display: none;
+	}
+		.sidebar.active {
+			display: none;
+		}
+		.sidebarXClose {
+			display: none;
+		}
 }

@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal'
 import styles from '../styles/components/navbar.module.css'
-import { Sidebar } from '../components/Sidebar'
+import {Sidebar} from '../components/Sidebar'
+import { SearchBox } from '../components/items/SearchBox'
+import { NavBox } from '../components/items/NavBox'
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
-	const [sbIsOpen, sbSetIsOpen] = useState(false)
+	const [showSidebar, setShowSidebar] = useState(false)
 
 	return (
 		<div>
 			<nav className={styles.navbar}>
 				<div className={styles.navMenu}>
-					<a onClick={() => sbIsOpen(true)}>
+					<a onClick={() => setShowSidebar(!showSidebar)}>
 						<img alt='' src='/components/navbar/menu.svg' className={styles.navMenuImg} />
 					</a>
 				</div>
@@ -23,9 +25,13 @@ export const Navbar = () => {
 					</a>
 				</div>
 
+				<SearchBox />
+
+				<NavBox />
+
 				<div className={styles.navSign}>
 					<a onClick={() => setIsOpen(true)}>
-						<img href='#Home' alt='' src='/components/navbar/log-in.svg' className={styles.navSignImg} />
+						<img href='#Home' alt='' src='/components/navbar/person.svg' className={styles.navSignImg} />
 					</a>
 
 					<Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}
@@ -51,7 +57,14 @@ export const Navbar = () => {
 				</div>
 			</nav>
 
-			<Sidebar isOpen={sbIsOpen} />
+			{showSidebar && <sidebar className={styles.sidebar + ' ' + styles.active}>
+				<a onClick={() => setShowSidebar(!showSidebar)}>
+					<img className={styles.sidebarXClose} src='/components/navbar/x.svg' />
+				</a>
+			</sidebar>}
+			
+			<Sidebar />
+
 		</div>
 	)
 }
