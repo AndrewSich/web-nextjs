@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import styles from '../styles/components/sidebar.module.css'
 
 export const Sidebar = () => {
-	const [sbIsOpen, sbSetIsOpen] = useState(false)
 
 	return(
 	<>
-		<sidebar className={styles.sidebar}>
+		<sidebar className={styles.sidebar + ' ' + styles.active}>
 			<div className={styles.sidebarBrand}>
-				<a onClick={() => sbSetIsOpen(false)}>
+				<a href='##'>
 					<img className={styles.sidebarXClose} src='/components/navbar/x.svg' />
 				</a>
 				<div className={styles.sBContainer}>
