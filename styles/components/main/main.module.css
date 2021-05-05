@@ -136,13 +136,14 @@
 						.featuredInfoLeft .FILAuthor {
 							display: block;
 							font-family: 'Work Sans', sans-serif;
-							font-size: 0.65em;
+							font-size: 0.5em;
 							font-weight: bold;
 							width: 100%;
-							height: 50%;
+							height: 40%;
 							margin: 0;
 							padding: 0;
 							color: salmon;
+              overflow: hidden;
 						}
 						.featuredInfoLeft time {
 							display: block;
@@ -150,7 +151,7 @@
 							width: 100%;
 							height: 50%;
 							font-family: 'EB Garamond', serif;
-							font-size: 0.6em;
+							font-size: 0.45em;
 							color:  rgb(153, 154, 157);
 						}
 					.featuredInfoRight {
@@ -168,6 +169,7 @@
 							border-radius: 3px;
 							font-family: 'Work Sans', sans-serif;
 							font-size: 0.5em;
+              font-weight: bold
 
 							text-decoration: none;
 							border: none;
@@ -260,10 +262,10 @@
 					.popularInfoLeft .PILAuthor {
 						display: block;
 						font-family: 'Work Sans', sans-serif;
-						font-size: 0.65em;
+						font-size: 0.5em;
 						font-weight: bold;
 						width: 100%;
-						height: 50%;
+						height: 40%;
 						color: salmon;
 						margin: 0;
 						padding: 0;
@@ -273,7 +275,7 @@
 						width: 100%;
 						height: 50%;
 						font-family: 'EB Garamond', serif;
-						font-size: 0.6em;
+						font-size: 0.45em;
 						text-decoration: none;
 						color: rgb(153, 154, 157);
 					}
