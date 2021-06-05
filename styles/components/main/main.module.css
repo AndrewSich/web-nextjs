@@ -10,13 +10,14 @@
 	width: 100%;
 }
 .word {
-	text-decoration: none;
 	text-align: center;
+	font-family: 'Frank Ruhl Libre', serif;
 }
+/*======== THIS CONTENT ONE ========*/
 .contentOne {
 	padding: 0;
 	/*background-color: orange;*/
-	/*height: 500px;*/
+
 	margin: 0;
 	width: 100%;
 }
@@ -143,7 +144,7 @@
 							margin: 0;
 							padding: 0;
 							color: salmon;
-              overflow: hidden;
+							overflow: hidden;
 						}
 						.featuredInfoLeft time {
 							display: block;
@@ -169,7 +170,7 @@
 							border-radius: 3px;
 							font-family: 'Work Sans', sans-serif;
 							font-size: 0.5em;
-              font-weight: bold
+							font-weight: bold;
 
 							text-decoration: none;
 							border: none;
@@ -269,6 +270,7 @@
 						color: salmon;
 						margin: 0;
 						padding: 0;
+						overflow: hidden;
 					}
 					.popularInfoLeft time {
 						display: block;
@@ -302,7 +304,6 @@
 						cursor: pointer;
 					}
 
-
 @media (min-width: 992px) {
 .main {
 	margin-left: 15em;
@@ -326,7 +327,176 @@
 	.Popular {
 		float: left;
 		width: 33%;
-		height: 150px;
+	}
+
+}
+
+
+
+
+
+/*======== THIS CONTENT TWO ========*/
+.contentTwo {
+	/*background-color: salmon;*/
+	padding: 0;
+
+	width: 100%;
+}
+.contentTwoTitle {
+	font-family: 'Frank Ruhl Libre', serif;
+	font-size: 1.7em;
+	font-weight: 900;
+	line-height: 1.6em;
+	color: #333333;
+
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+	.recommend {
+		/*background-color: lightgreen;*/
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+		.recommendContainer {
+			/*background-color: salmon;*/
+			width: 100%;
+			padding: 0 1em;
+			margin: 0;
+
+			display: grid;
+			grid-column-gap: 1em;
+			grid-template-columns: auto auto;
+			text-decoration: none;
+			list-style: none;
+
+
+		}
+		.recommendPreview {
+			/*background-color: yellow;*/
+			width: 100%;
+
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+
+			margin-bottom: 1em;
+			overflow: hidden;
+		}
+			.rPHead {
+				background-color: white;
+				width: 100%;
+				height: 10em;
+
+				border-radius: 5px;
+
+				overflow: hidden;
+			}
+				.rPHContainer {
+					width: 100%;
+					height: 100%;
+				}
+					.rPHImg {
+						width: 100%;
+						height: 100%;
+						
+						object-fit: cover;
+					}
+
+			.rPBody {
+				/*background-color: salmon;*/
+				margin-top: 0.5em;
+
+			}
+				.rPBody h2 {
+					font-family: 'Work Sans', sans-serif;
+					font-size: 1em;
+					font-weight: 900;
+					line-height: 1.2em;
+					color: #333;
+					text-align: justify-all;
+
+					margin: 0;
+				}
+				.rPBody p {
+					display: none;
+				}
+				.rPBInfo {
+					font-family: "EB Garamond", serif;
+					display: flex;
+					padding: 0;
+
+					width: 100%;
+					height: 0.75em;
+					overflow: hidden;
+				}
+					.rPBInfo b {
+						font-size: 0.5em;
+						height: 100%;
+						color: salmon;
+					}
+					.rPBInfo time {
+						font-size: 0.5em;
+						margin-left: 0.4em;
+						color: rgb(153, 154, 157);
+						height: 100%;
+					}
+			/*.rPHead {
+				background-color: lightblue;
+				width: 100%;
+				height: 7em;
+				overflow: hidden;
+
+				padding: 0;
+			}
+				.rPHContainer {
+					background-color: grey;
+					display: ;
+					width: 100%;
+					max-width: 100%;
+					height: 100%;
+					overflow: hidden;
+
+				}
+					.rPHContainer .rPHImg {
+						width: 100%;
+						height: 100%;
+						display: block;
+						object-fit: cover;
+
+					}
+			.rPBody {
+				width: 100%
+			}*/
+					
+
+
+
+	.learn {
+		background-color: yellow;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+
+@media (min-width: 992px) {
+.contentTwo {
+	/*height: 500px;*/
+}
+.contentTwo:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+	.recommend {
+		float: left;
+		width: 67%
+	}
+	.learn {
+		float: left;
+		width: 33%;
 	}
 
 }

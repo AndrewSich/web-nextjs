@@ -6,7 +6,7 @@ export const Main = () => {
 	return (
 	<>
 		<main className={styles.main}>
-			<h1 className={styles.word}>Welcome to Levxa.com!!</h1>
+			<h1 className={styles.word}>Welcome to Levxa.com</h1>
 			<div className={styles.contentOne}>
 				<div className={styles.Featured}>
 					<h1 className={styles.contentOneTitle}>Featured</h1>
@@ -237,7 +237,7 @@ export const Main = () => {
 										<p>Coinbase, The Largest Cryptocurrency exchange in the US, is acquiring the...</p>
 										<div className={styles.popularInfoContainer}>
 											<div className={styles.popularInfoLeft}>
-												<b className={styles.PILAuthor}>By Defyna Permatasari</b>
+												<b className={styles.PILAuthor}>Defyna Permatasari</b>
 												<time>Mei 1, 2021</time>
 											</div>
 											<div className={styles.popularInfoRight}>
@@ -252,6 +252,113 @@ export const Main = () => {
 					</ul>
 				</div>
 			</div>
+
+			<div className={styles.contentTwo}>
+				<div className={styles.recommend}>
+					<h1 className={styles.contentTwoTitle}>Recommend</h1>
+					<ul className={styles.recommendContainer}>
+
+						<li className={styles.recommendPreview}>
+							<a href="#">
+								<div className={styles.rPContainer}>
+									<div className={styles.rPHead}>
+										<div className={styles.rPHContainer}>
+											<img className={styles.rPHImg} src="../../wp-content/2.png" />
+											
+										</div>
+									</div>
+
+									<div className={styles.rPBody}>
+										<h2>Ethereum moves Toward ETH 2.0 With 'Super Experiental' Testnet</h2>
+										<p>the fed is loss funds for israel-palestine conflict</p>
+										<div className={styles.rPBInfo}>
+											<b>Andrew Setyawan</b>
+											<time>at May 23, 2021</time>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+
+						<li className={styles.recommendPreview}>
+							<a href="#">
+								<div className={styles.rPContainer}>
+									<div className={styles.rPHead}>
+										<div className={styles.rPHContainer}>
+											<img className={styles.rPHImg} src="../../wp-content/3.jpg" />
+											
+										</div>
+									</div>
+
+									<div className={styles.rPBody}>
+										<h2>Apple Co-Founder Stave Wozniak's Lawsuit Over Youtube Bitcoin Scams Dismissed</h2>
+									</div>
+								</div>
+							</a>
+						</li>
+
+						<li className={styles.recommendPreview}>
+							<a href="#">
+								<div className={styles.rPContainer}>
+									<div className={styles.rPHead}>
+										<div className={styles.rPHContainer}>
+											<img className={styles.rPHImg} src="../../wp-content/4.jpg" />
+											
+										</div>
+									</div>
+
+									<div className={styles.rPBody}>
+										<h2>Hamas Sees Surge in Bitcoin Donations Amidst Israel-Palestine Conflict</h2>
+									</div>
+								</div>
+							</a>
+						</li>
+
+						<li className={styles.recommendPreview}>
+							<a href="#">
+								<div className={styles.rPContainer}>
+									<div className={styles.rPHead}>
+										<div className={styles.rPHContainer}>
+											<img className={styles.rPHImg} src="../../wp-content/5.jpg" />
+											
+										</div>
+									</div>
+
+									<div className={styles.rPBody}>
+										<h2>Paxful Pay Is an 'Invisible Bridge to Bitcoin' Says Cofounder</h2>
+									</div>
+								</div>
+							</a>
+						</li>
+
+						<li className={styles.recommendPreview}>
+							<a href="#">
+								<div className={styles.rPContainer}>
+									<div className={styles.rPHead}>
+										<div className={styles.rPHContainer}>
+											<img className={styles.rPHImg} src="../../wp-content/5.jpg" />
+											
+										</div>
+									</div>
+
+									<div className={styles.rPBody}>
+										<h2>Paxful Pay Is an 'Invisible Bridge to Bitcoin' Says Cofounder</h2>
+									</div>
+								</div>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div className={styles.learn}>
+					<h1 className={styles.contentTwoTitle}>Learn</h1>
+					<ul className={styles.learnContainer}>
+						<h3>this a content</h3>
+					</ul>
+				</div>
+			</div>
+
 		</main>
 	</>
 	)
