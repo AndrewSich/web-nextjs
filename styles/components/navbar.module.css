@@ -11,6 +11,7 @@
 	/* FOR FIXED NAVBAR */
 	position: fixed;
 	top: 0;
+	x-index: 25;
 }
 .navMenu {
 	background-color: ;
