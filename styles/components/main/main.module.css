@@ -65,12 +65,12 @@
 	font-family: "Work Sans", sans-serif;
 	font-weight: 700;
 	padding: 0;
-	width: 5.25em;
-	height: 2.25em;
+	width: 4.5em;
+	height: 2em;
 	font-size: 0.5em;
 	border-radius: 3px;
 	cursor: pointer;
-
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.1), -1px -1px 5px rgba(0,0,0,0.1);
 	margin: 0 0 0 auto;
 }
 /*=============================*/
@@ -130,15 +130,16 @@
 		.previewBody p {
 			margin: 0;
 			font-family: "EB Garamond", serif;
-			font-size: 0.9em;
+			font-size: 0.75em; /*nilai awal 0.9em*/
 			font-weight: 500;
-			line-height: 1.25em;
+			line-height: 1.2em; /*nilai awal 1.25em*/
 			color: #333;
 			overflow: hidden;
 
 			/*margin-top: 0.5em;*/
 			margin-top: 0.25em;
-			height: 2.5em;
+			height: 2.35em;
+			background-color: ;
 		}
 		.pBInfo {
 			background-color: ;
@@ -156,7 +157,7 @@
 					display: block;
 					background-color: ;
 					font-family: "Work Sans", sans-serif;
-					font-size: 0.5em;
+					font-size: 0.4em;
 					font-weight: 600;
 					color: salmon;
 
@@ -167,21 +168,21 @@
 					background-color: ;
 					display: block;
 					font-family: "EB Garamond", serif;
-					font-size: 0.5em;
-					font-weight: 600;
+					font-size: 0.4em;
+					font-weight: 500;
 					color: #999A9D;
 				}
 		.pBDetail {
 			background-color: ;
 
 			display: flex;
-			margin-top: 0.3em;
+			/*margin-top: 0.1em;*/
 		}
 			.pBDetail b {
 				display: block;
-				background-color:;
+				background-color: ;
 				font-family: "Work Sans", sans-serif;
-				font-size: 0.5em;
+				font-size: 0.4em;
 				font-weight: 600;
 				color: salmon;
 
@@ -193,15 +194,14 @@
 				display: block;
 				background-color:;
 				font-family: "EB Garamond", serif;
-				font-size: 0.5em;
-				font-weight: 600;
+				font-size: 0.4em;
+				font-weight: 500;
 				color: #999A9D;
 
 				justify-content: center;
 				text-align: center;
 				margin: 0;
-				margin-top: -1px;
-				margin-left: 0.4em;
+				margin-left: 0.7em;
 			}
 
 /*================================*/
