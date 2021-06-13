@@ -1,502 +1,223 @@
-/* ======== MAIN ========*/
+ /*======== MAIN ========*/
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 .main {
-	/*background-color: yellow;*/
-	/*top: 10em; ==> declarate but not use*/
 	margin-top: 5em;
+	padding: 0;
 	width: 100%;
 }
 .word {
 	text-align: center;
-	font-family: 'Frank Ruhl Libre', serif;
+	font-family: "Frank Ruhl Libre", serif;
 }
-/*======== THIS CONTENT ONE ========*/
-.contentOne {
-	padding: 0;
-	/*background-color: orange;*/
-
-	margin: 0;
-	width: 100%;
-}
-.contentOne:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.contentOneTitle {
-	/*background-color: lightgreen;*/
-	margin-bottom: 0.5em;
-
-	margin-left: 0.5em;
-	font-size: 1.7em;
-	line-height: 1.6em;
-	font-weight: 900;
-	color: #333333;
-	font-family: 'Frank Ruhl Libre', serif;
-}
-
-	/* Content Featured */
-	.Featured {
-		/*background-color: salmon;*/
-		width: 100%;
-		padding: 0;
-		margin: 0;
-		/*height: 450px;*/
-	}
-		.FeaturedContainer {
-			/*background-color: yellow;*/
-			padding: 0;
-			margin: 0;
-			border-top: 1px solid rgba(0,0,0,0.08);
-		}
-		.FeaturedContainer:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-		.FeaturedPreview {
-			/*background-color: yellow;*/
-			width: 100%;
-			padding: 1em 1em 0.5em 1em;
-			border-bottom: 1px solid rgba(0,0,0,0.08);
-
-			text-decoration: none;
-			list-style: none;
-		}
-		.FPContainer {
-			/*background-color: lightgreen;*/
-
-			display: flex;
-			width: 100%;
-			margin: 0;
-			height:;
-			overflow: ;
-		}
-			.FPHead {
-				background-color: blue;
-				width: 30%;
-				height: 6em;
-				overflow: hidden;
-				border-radius: 5px;
-				
-			}
-				.FPHead img {
-					width: 100%;
-					height: 100%;
-					display: block;
-					object-fit: cover;
-				}
-			.FPBody {
-				background-color: ;
-				width: 70%;
-				padding-left: 1em; 
-			}
-				.FPBody h2 {
-					background-color:;
-					padding: 0;
-					margin: 0;
-					font-size: 1em;
-					font-weight: 900;
-					line-height: 1.15em;
-					font-family: 'Work Sans', sans-serif;
-					text-align: justify-all;
-
-					color: #333333;
-				}
-				.FPBody p {
-					background-color:;
-					font-family: 'EB Garamond', serif;
-					font-size: 0.9em;
-					color: #333;
-					line-height: 1.25em;
-					font-weight: 400;
-
-					height: 2.5em;
-					overflow: hidden;
-					margin: 0;
-					margin-top: 0.25em;
-				}
-				.featuredInfoContainer {
-					background-color: ;
-					margin-top: 0.5em;
-					width: 100%;
-					height: 2em;
-
-					display: flex;
-					justify-content: space-between;
-					overflow: hidden;
-				}
-					.featuredInfoLeft {
-						width: 50%;
-						height: 100%;
-						overflow: hidden;
-					}
-						.featuredInfoLeft .FILAuthor {
-							display: block;
-							font-family: 'Work Sans', sans-serif;
-							font-size: 0.5em;
-							font-weight: bold;
-							width: 100%;
-							height: 40%;
-							margin: 0;
-							padding: 0;
-							color: salmon;
-							overflow: hidden;
-						}
-						.featuredInfoLeft time {
-							display: block;
-							text-decoration: none;
-							width: 100%;
-							height: 50%;
-							font-family: 'EB Garamond', serif;
-							font-size: 0.45em;
-							color:  rgb(153, 154, 157);
-						}
-					.featuredInfoRight {
-						background-color:;
-						width: 20%;
-						height: 100%;
-						overflow: hidden;
-					}
-						.featuredInfoRight .FIRButton {
-							justify-content: center;
-							width: 100%;
-							height: 60%;
-							background-color: black;
-							color: #FFF;
-							border-radius: 3px;
-							font-family: 'Work Sans', sans-serif;
-							font-size: 0.5em;
-							font-weight: bold;
-              font-weight: bold;
-							text-decoration: none;
-							border: none;
-						}
-						.FIRButton:hover {
-							cursor: pointer;
-						}
-			
-
-	/* Content Popular */
-	.Popular {
-		width: 100%;
-		background-color: ;
-		padding: 0;
-		margin: 0;
-	}
-	.PopularContainer {
-		/*background-color: salmon;*/
-		margin: 0;
-		padding: 0;
-		border-top: 1px solid rgba(0,0,0,0.08)
-	}
-	.PopularPreview {
-		width: 100%;
-		padding: 1em 1em 0.5em 1em;
-		border-bottom: 1px solid rgba(0,0,0,0.08);
-
-		text-decoration: none;
-		list-style: none;
-	}
-		.PPContainer {
-			display: flex;
-			width: 100%;
-		}
-		.PPHead {
-			background-color: #FFF;
-			width: 30%;
-			height: 6em;
-			border-radius: 5px;
-			overflow: hidden;
-		}
-			.PPHead img {
-				width: 100%;
-				height: 100%;
-				display: block;
-				object-fit: cover;
-			}
-		.PPBody {
-			/*background-color: lightgreen;*/
-			width: 70%;
-			padding-left: 1em;
-		}
-			.PPBody h2 {
-				background-color: ;
-				margin: 0;
-				font-family: 'Work Sans', sans-serif;
-				font-size: 1em;
-				font-weight: 900;
-				line-height: 1.15em;
-				color: #333;
-				text-align: justify-all;
-			}
-			.PPBody p {
-				background-color: ;
-				font-family: 'EB Garamond', serif;
-				font-size: 0.9em;
-				font-weight: 400;
-				line-height: 1.25em;
-				color: #333;
-
-				height: 2.5em;
-				margin: 0;
-				margin-top: 0.25em;
-				overflow: hidden;
-			}
-			.popularInfoContainer {
-				background-color:;
-				width: 100%;
-				height: 2em;
-				margin-top: 0.5em;
-				display: flex;
-				justify-content: space-between;
-				overflow: hidden;
-			}
-				.popularInfoLeft {
-					width: 50%;
-					height: 100%;
-					overflow: hidden;
-				}
-					.popularInfoLeft .PILAuthor {
-						display: block;
-						font-family: 'Work Sans', sans-serif;
-						font-size: 0.5em;
-						font-weight: bold;
-						width: 100%;
-						height: 40%;
-						color: salmon;
-						margin: 0;
-						padding: 0;
-						overflow: hidden;
-					}
-					.popularInfoLeft time {
-						display: block;
-						width: 100%;
-						height: 50%;
-						font-family: 'EB Garamond', serif;
-						font-size: 0.45em;
-						text-decoration: none;
-						color: rgb(153, 154, 157);
-					}
-				.popularInfoRight {
-					width: 20%;
-					height: 100%;
-					overflow: hidden;
-				}
-					.popularInfoRight .PIRButton {
-						width: 100%;
-						height: 60%;
-						background-color: black;
-						color: #FFF;
-						font-family: 'Work Sans', sans-serif;
-						font-size: 0.5em;
-						font-weight: bold;
-						justify-content: center;
-						border-radius: 3px;
-
-						text-decoration: none;
-						border: none;
-					}
-					.PIRButton:hover {
-						cursor: pointer;
-					}
-
 @media (min-width: 992px) {
 .main {
 	margin-left: 15em;
 	width: auto;
 }
-.contentOne{
-	/*height: 750px;*/
 }
-	.Featured {
-		float: left;
-		width: 67%;
-	}
-		.FeaturedContainer {
-			display: grid;
-			grid-template-columns: auto auto;
-		}
-		.FeaturedPreview {
-			/*width: 50%;*/
-			border-right: 1px solid rgba(0,0,0,0.08);
-		}
-	.Popular {
-		float: left;
-		width: 33%;
-	}
-
-}
-
-
-
-
-
-/*======== THIS CONTENT TWO ========*/
-.contentTwo {
-	/*background-color: salmon;*/
+/*========== UTILITY ==========*/
+.mainContent {
+	margin: 0;
 	padding: 0;
-
 	width: 100%;
 }
-.contentTwoTitle {
-	font-family: 'Frank Ruhl Libre', serif;
-	font-size: 1.7em;
-	font-weight: 900;
-	line-height: 1.6em;
-	color: #333333;
-
-	margin-left: 0.5em;
-	margin-bottom: 0.5em;
-}
-	.recommend {
-		/*background-color: lightgreen;*/
-		width: 100%;
-		padding: 0;
-		margin: 0;
-	}
-		.recommendContainer {
-			/*background-color: salmon;*/
-			width: 100%;
-			padding: 0 1em;
-			margin: 0;
-
-			display: grid;
-			grid-column-gap: 1em;
-			grid-template-columns: auto auto;
-			text-decoration: none;
-			list-style: none;
-
-
-		}
-		.recommendPreview {
-			/*background-color: yellow;*/
-			width: 100%;
-
-			margin: 0;
-			padding: 0;
-			text-decoration: none;
-			list-style: none;
-
-			margin-bottom: 1em;
-			overflow: hidden;
-		}
-			.rPHead {
-				background-color: white;
-				width: 100%;
-				height: 10em;
-
-				border-radius: 5px;
-
-				overflow: hidden;
-			}
-				.rPHContainer {
-					width: 100%;
-					height: 100%;
-				}
-					.rPHImg {
-						width: 100%;
-						height: 100%;
-						
-						object-fit: cover;
-					}
-
-			.rPBody {
-				/*background-color: salmon;*/
-				margin-top: 0.5em;
-
-			}
-				.rPBody h2 {
-					font-family: 'Work Sans', sans-serif;
-					font-size: 1em;
-					font-weight: 900;
-					line-height: 1.2em;
-					color: #333;
-					text-align: justify-all;
-
-					margin: 0;
-				}
-				.rPBody p {
-					display: none;
-				}
-				.rPBInfo {
-					font-family: "EB Garamond", serif;
-					display: flex;
-					padding: 0;
-
-					width: 100%;
-					height: 0.75em;
-					overflow: hidden;
-				}
-					.rPBInfo b {
-						font-size: 0.5em;
-						height: 100%;
-						color: salmon;
-					}
-					.rPBInfo time {
-						font-size: 0.5em;
-						margin-left: 0.4em;
-						color: rgb(153, 154, 157);
-						height: 100%;
-					}
-			/*.rPHead {
-				background-color: lightblue;
-				width: 100%;
-				height: 7em;
-				overflow: hidden;
-
-				padding: 0;
-			}
-				.rPHContainer {
-					background-color: grey;
-					display: ;
-					width: 100%;
-					max-width: 100%;
-					height: 100%;
-					overflow: hidden;
-
-				}
-					.rPHContainer .rPHImg {
-						width: 100%;
-						height: 100%;
-						display: block;
-						object-fit: cover;
-
-					}
-			.rPBody {
-				width: 100%
-			}*/
-					
-
-
-
-	.learn {
-		background-color: yellow;
-		width: 100%;
-		padding: 0;
-		margin: 0;
-	}
-
-
-@media (min-width: 992px) {
-.contentTwo {
-	/*height: 500px;*/
-}
-.contentTwo:after {
+.mainContent:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-	.recommend {
-		float: left;
-		width: 67%
-	}
-	.learn {
-		float: left;
-		width: 33%;
-	}
-
+.contentTitle {
+	font-family: "Frank Ruhl Libre", serif;
+	font-size: 1.5em;
+	color: #333;
+	margin: 0;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
 }
+.mCL {
+	/*background-color: pink;*/
+	width: 100%;
+}
+.mCR {
+	background-color: salmon;
+	width: 100%;
+}
+@media (min-width: 992px) {
+.mainContent {}
+.mCL {
+	float: left;
+	width: 67%;
+}
+.mCR {
+	float: left;
+	width: 33%;
+}
+}
+
+.readBtn {
+	background-color: black;
+	color: #FFF;
+	text-decoration: none;
+	border: none;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 700;
+	padding: 0;
+	width: 5.25em;
+	height: 2.25em;
+	font-size: 0.5em;
+	border-radius: 3px;
+	cursor: pointer;
+
+	margin: 0 0 0 auto;
+}
+/*=============================*/
+
+/*====== Preview Components ======*/
+.previewContainer {
+	padding: 0;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin: 0;
+	column-gap: 1em;
+	position: relative;
+	text-decoration: none;
+	list-style: none;
+}
+.preview {
+	/*background-color: yellow;*/
+	width: 100%;
+	height: auto;
+	margin: 0.5em 0;
+	grid-column: span 6;
+	position: relative;
+	text-decoration: none;
+	list-style: none;
+	overflow: ; /* NOT5 RECOMMENDATION*/
+}
+	.previewHead {
+		background-color: #FFF;
+		width: auto;
+		height: 10em;
+		border-radius: 5px;
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.1), -3px -3px 10px rgba(0,0,0,0.1);
+		overflow: hidden;
+	}
+		.previewHead img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	.previewBody {
+		background-color: ;
+		margin: 0;
+		width: auto;
+
+		margin-top: 0.5em;
+	}
+		.previewBody h2{
+			margin: 0;
+			font-family: "Work Sans", sans-serif;
+			font-size: 0.9em;
+			font-weight: 900;
+			line-height: 1.2em;
+			color: #333;
+			overflow: hidden;
+		}
+		.previewBody p {
+			margin: 0;
+			font-family: "EB Garamond", serif;
+			font-size: 0.9em;
+			font-weight: 500;
+			line-height: 1.25em;
+			color: #333;
+			overflow: hidden;
+
+			/*margin-top: 0.5em;*/
+			margin-top: 0.25em;
+			height: 2.5em;
+		}
+		.pBInfo {
+			background-color: ;
+
+			/*margin-top: 0.25em;*/
+			margin-top: 0.1em;
+			display: flex;
+		}
+			.pBILeft {
+				background-color: ;
+				display: ;
+				width: 70%;
+			}
+				.pBInfo b {
+					display: block;
+					background-color: ;
+					font-family: "Work Sans", sans-serif;
+					font-size: 0.5em;
+					font-weight: 600;
+					color: salmon;
+
+					height: 1.25em;
+					overflow: hidden;
+				}
+				.pBInfo time {
+					background-color: ;
+					display: block;
+					font-family: "EB Garamond", serif;
+					font-size: 0.5em;
+					font-weight: 600;
+					color: #999A9D;
+				}
+		.pBDetail {
+			background-color: ;
+
+			display: flex;
+			margin-top: 0.3em;
+		}
+			.pBDetail b {
+				display: block;
+				background-color:;
+				font-family: "Work Sans", sans-serif;
+				font-size: 0.5em;
+				font-weight: 600;
+				color: salmon;
+
+				justify-content: center;
+				text-align: center;
+				margin: 0;
+			}
+			.pBDetail time {
+				display: block;
+				background-color:;
+				font-family: "EB Garamond", serif;
+				font-size: 0.5em;
+				font-weight: 600;
+				color: #999A9D;
+
+				justify-content: center;
+				text-align: center;
+				margin: 0;
+				margin-top: -1px;
+				margin-left: 0.4em;
+			}
+
+/*================================*/
+
+/*===== LATEST CONTENT =====*/
+.latest {
+	background-color: ;
+	margin: 0;
+	width: 100%;
+}
+.cC {
+	width: 100%;
+	padding: 0 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: ; /*NOT RECOMMENDATION*/ 
+}
+/*==========================*/
