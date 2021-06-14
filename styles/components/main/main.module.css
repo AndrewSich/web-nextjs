@@ -42,7 +42,7 @@
 	width: 100%;
 }
 .mCR {
-	background-color: salmon;
+	background-color: ;
 	width: 100%;
 }
 @media (min-width: 992px) {
@@ -73,6 +73,13 @@
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.1), -1px -1px 5px rgba(0,0,0,0.1);
 	margin: 0 0 0 auto;
 }
+@media (min-width: 992px) {
+	.readBtn {
+		width: 4.75em;
+		font-size: 0.6em;
+		font-weight: 600;
+	}
+}
 /*=============================*/
 
 /*====== Preview Components ======*/
@@ -88,7 +95,6 @@
 	list-style: none;
 }
 .preview {
-	/*background-color: yellow;*/
 	width: 100%;
 	height: auto;
 	margin: 0.5em 0;
@@ -141,42 +147,11 @@
 			height: 2.35em;
 			background-color: ;
 		}
-		.pBInfo {
-			background-color: ;
-
-			/*margin-top: 0.25em;*/
-			margin-top: 0.1em;
-			display: flex;
-		}
-			.pBILeft {
-				background-color: ;
-				display: ;
-				width: 70%;
-			}
-				.pBInfo b {
-					display: block;
-					background-color: ;
-					font-family: "Work Sans", sans-serif;
-					font-size: 0.4em;
-					font-weight: 600;
-					color: salmon;
-
-					height: 1.25em;
-					overflow: hidden;
-				}
-				.pBInfo time {
-					background-color: ;
-					display: block;
-					font-family: "EB Garamond", serif;
-					font-size: 0.4em;
-					font-weight: 500;
-					color: #999A9D;
-				}
 		.pBDetail {
 			background-color: ;
 
 			display: flex;
-			/*margin-top: 0.1em;*/
+			margin-top: 0.15em;
 		}
 			.pBDetail b {
 				display: block;
@@ -184,7 +159,7 @@
 				font-family: "Work Sans", sans-serif;
 				font-size: 0.4em;
 				font-weight: 600;
-				color: salmon;
+				color: black;
 
 				justify-content: center;
 				text-align: center;
@@ -194,7 +169,7 @@
 				display: block;
 				background-color:;
 				font-family: "EB Garamond", serif;
-				font-size: 0.4em;
+				font-size: 0.45em;
 				font-weight: 500;
 				color: #999A9D;
 
@@ -203,10 +178,20 @@
 				margin: 0;
 				margin-left: 0.7em;
 			}
-
+@media (min-width: 992px) {
+		.pBDetail {
+			margin-top: 0.25em;
+		}
+			.pBDetail b {
+				font-size: 0.5em;
+			}
+			.pBDetail time {
+				font-size: 0.5em;
+			}
+}
 /*================================*/
-
-/*===== LATEST CONTENT =====*/
+/*================================*/
+/*======== LATEST CONTENT ========*/
 .latest {
 	background-color: ;
 	margin: 0;
@@ -220,4 +205,73 @@
 	align-items: center;
 	overflow: ; /*NOT RECOMMENDATION*/ 
 }
-/*==========================*/
+/*===latest opening===*/
+.latestOpening {
+	padding: 0 1em;
+	margin-bottom: 0.5em;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+	.lOHead {
+		height: 12em;
+		box-shadow: 5px 5px 15px rgba(0,0,0,0.1), -5px -5px 15px rgba(0,0,0,0.1);
+	}
+	.lOBody {}
+		.lOBody h2 {
+			font-size: 1.2em;
+		}
+		.lOBody p {
+			font-size: 1em;
+		}
+	.lOBDetail {
+		margin-top: 0.25em;
+	}
+		.lOBDetail b {
+			font-size: 0.55em;
+			color: #333;
+		}
+		.lOBDetail time {
+			font-size: 0.55em;
+		}
+@media (min-width: 992px) {
+	.lOHead {
+		height: 22.5em;
+	}
+	.lOBDetail {
+		margin-top: 0.25em;
+	}
+		.lOBDetail b {
+			font-size: 0.6em;
+		}
+		.lOBDetail time {
+			font-size: 0.6em;
+		}
+}
+/*====================*/
+/*================================*/
+
+/*========= TOP CONTENT =========*/
+.player {
+	width: 92%;
+	height: 11em;
+	background-color: black;
+	margin: 0 auto;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.15), -5px -5px 15px rgba(0,0,0,0.15);
+}
+.button.play {
+	width: 54px;
+	height: 54px;
+	border-style: solid;
+	border-width: 28px;
+	border-color: red;
+	border-width: 28px 28px 28px 28px;
+	border-color: red yellow green blue;
+	border-width: 25px 0 30px 60px;
+	box-sizing: border-box;
+	border-width: 25px 0 30px 50px;
+	border-color: transparent transparent transparent red;
+	background-color: transparent;
+	margin: 18% auto 0;
+	margin-left: 43%;
+	cursor: pointer;
+}
+/*===============================*/
