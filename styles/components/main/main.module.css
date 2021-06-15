@@ -177,6 +177,7 @@
 				text-align: center;
 				margin: 0;
 				margin-left: 0.7em;
+				margin-top: -1px;
 			}
 @media (min-width: 992px) {
 		.pBDetail {
