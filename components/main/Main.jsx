@@ -11,7 +11,6 @@ export const Main = () => {
 				<div className={styles.mCL}>
 					<div className={styles.latest}>
 						<h2 className={styles.contentTitle}>Latest Content</h2>
-
 						<div className={styles.latestOpening}>
 							<li className={styles.preview}>
 								<a href="#">
@@ -30,7 +29,6 @@ export const Main = () => {
 								</a>
 							</li>
 						</div>
-
 						<div className={styles.cC}>
 							<ul className={styles.previewContainer}>
 
@@ -138,6 +136,12 @@ export const Main = () => {
 
 							</ul>
 						</div>
+						<div className={styles.moreBtn}>
+							<a href="#">
+								<b>More Latest</b>
+								<img src="../../svg/caret-right-fill.svg" />
+							</a>
+						</div>
 					</div>
 				</div>
 				<div className={styles.mCR}>
@@ -242,8 +246,13 @@ export const Main = () => {
 									</div>
 								</a>
 							</li>
-
 						</ul>
+						<div className={styles.moreBtn}>
+							<a href="#">
+								<b>More Top</b>
+								<img src="../../svg/caret-right-fill.svg" />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -357,6 +366,12 @@ export const Main = () => {
 								</li>
 
 							</ul>
+						</div>
+						<div className={styles.moreBtn}>
+							<a href="#">
+								<b>More Popular</b>
+								<img src="../../svg/caret-right-fill.svg" />
+							</a>
 						</div>
 					</div>
 				</div>
