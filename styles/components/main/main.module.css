@@ -8,15 +8,9 @@
 	padding: 0;
 	width: 100%;
 }
-.word {
-	text-align: center;
-	font-family: "Frank Ruhl Libre", serif;
-}
+.word {text-align: center;font-family: "Frank Ruhl Libre", serif;}
 @media (min-width: 992px) {
-.main {
-	margin-left: 15em;
-	width: auto;
-}
+.main {margin-left: 15em;width: auto;}
 }
 /*========== UTILITY ==========*/
 .mainContent {
@@ -37,24 +31,13 @@
 	margin-left: 0.5em;
 	margin-bottom: 0.5em;
 }
-.mCL {
-	/*background-color: pink;*/
-	width: 100%;
-}
-.mCR {
-	background-color: ;
-	width: 100%;
-}
+.mCL {width: 100%;}
+.mCR {width: 100%;}
+
 @media (min-width: 992px) {
 .mainContent {}
-.mCL {
-	float: left;
-	width: 67%;
-}
-.mCR {
-	float: left;
-	width: 33%;
-}
+.mCL {float: left;width: 67%;}
+.mCR {float: left;width: 33%;}
 }
 
 .readBtn {
@@ -74,12 +57,34 @@
 	margin: 0 0 0 auto;
 }
 @media (min-width: 992px) {
-	.readBtn {
-		width: 4.75em;
-		font-size: 0.6em;
-		font-weight: 600;
-	}
+.readBtn {width: 4.75em;font-size: 0.6em;font-weight: 600;}
 }
+
+.moreBtn {
+	margin: 0.5em 0;
+	height: 2.25em;
+	border-top: 1px solid rgba(0,0,0,0.08);
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+	overflow: hidden;
+}
+	.moreBtn a {
+		display: block;
+		height: 70%;
+		margin-top: 1em;
+		padding: 0 1em;
+		text-align: right;
+		display: flex;
+		font-family: "Work Sans", sans-serif;
+		font-size: 0.6em;
+		font-weight: 900;
+	}
+		.moreBtn a b {margin: 0 0 0 auto;}
+		.moreBtn a img {
+			display: block;
+			width: 1em;
+			height: 1em;
+			margin: 0.1em 0 0 0;
+		}
 /*=============================*/
 
 /*====== Preview Components ======*/
@@ -145,39 +150,32 @@
 			/*margin-top: 0.5em;*/
 			margin-top: 0.25em;
 			height: 2.35em;
-			background-color: ;
 		}
 		.pBDetail {
-			background-color: ;
-
 			display: flex;
 			margin-top: 0.15em;
 		}
 			.pBDetail b {
 				display: block;
-				background-color: ;
 				font-family: "Work Sans", sans-serif;
 				font-size: 0.4em;
 				font-weight: 600;
 				color: black;
+				margin: auto 0 auto 0;
 
 				justify-content: center;
 				text-align: center;
-				margin: 0;
 			}
 			.pBDetail time {
 				display: block;
-				background-color:;
 				font-family: "EB Garamond", serif;
 				font-size: 0.45em;
 				font-weight: 500;
 				color: #999A9D;
+				margin: auto 0 auto 0.7em;
 
 				justify-content: center;
 				text-align: center;
-				margin: 0;
-				margin-left: 0.7em;
-				margin-top: -1px;
 			}
 @media (min-width: 992px) {
 		.pBDetail {
@@ -193,11 +191,7 @@
 /*================================*/
 /*================================*/
 /*======== LATEST CONTENT ========*/
-.latest {
-	background-color: ;
-	margin: 0;
-	width: 100%;
-}
+.latest {margin: 0;width: 100%;}
 .cC {
 	width: 100%;
 	padding: 0 1em;
@@ -238,7 +232,6 @@
 	background-color: black;
 	margin: 0 auto;
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.15), -5px -5px 15px rgba(0,0,0,0.15);
-
 	margin-bottom: 0.5em;
 }
 .button.play {
