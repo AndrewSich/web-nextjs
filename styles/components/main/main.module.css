@@ -216,46 +216,29 @@
 		box-shadow: 5px 5px 15px rgba(0,0,0,0.1), -5px -5px 15px rgba(0,0,0,0.1);
 	}
 	.lOBody {}
-		.lOBody h2 {
-			font-size: 1.2em;
-		}
-		.lOBody p {
-			font-size: 1em;
-		}
-	.lOBDetail {
-		margin-top: 0.25em;
-	}
-		.lOBDetail b {
-			font-size: 0.55em;
-			color: #333;
-		}
-		.lOBDetail time {
-			font-size: 0.55em;
-		}
+		.lOBody h2 {font-size: 1.2em;}
+		.lOBody p {font-size: 1em;}
+	.lOBDetail {margin-top: 0.25em;}
+		.lOBDetail b {font-size: 0.55em;color: #333;}
+		.lOBDetail time {font-size: 0.55em;}
 @media (min-width: 992px) {
-	.lOHead {
-		height: 22.5em;
-	}
-	.lOBDetail {
-		margin-top: 0.25em;
-	}
-		.lOBDetail b {
-			font-size: 0.6em;
-		}
-		.lOBDetail time {
-			font-size: 0.6em;
-		}
+	.lOHead {height: 22.5em;}
+	.lOBDetail {margin-top: 0.25em;}
+		.lOBDetail b {font-size: 0.6em;}
+		.lOBDetail time {font-size: 0.6em;}
 }
 /*====================*/
 /*================================*/
 
-/*========= TOP CONTENT =========*/
+/*===== player =====*/
 .player {
 	width: 92%;
 	height: 11em;
 	background-color: black;
 	margin: 0 auto;
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.15), -5px -5px 15px rgba(0,0,0,0.15);
+
+	margin-bottom: 0.5em;
 }
 .button.play {
 	width: 54px;
@@ -274,4 +257,112 @@
 	margin-left: 43%;
 	cursor: pointer;
 }
+/*===================*/
+
+/*========= TOP CONTENT =========*/
+.top {
+	width: 100%;
+	margin: 0;
+}
+.topContainer {
+	margin: 0;
+	padding: 0 1em;
+	text-decoration: none;
+	list-style: none;
+	border-top: 1px solid rgba(0,0,0,0.08);
+}
+	.topCard {
+		width:;
+		text-decoration: none;
+		list-style: none;
+		border-bottom: 1px solid rgba(0,0,0,0.08);
+		margin-top: 0.5em;
+	}
+	.tCC {
+		display: flex;
+		width: 100%;
+	}
+		.tCHead {
+			background-color: #FFF;
+			width: 30%;
+			/*height: 6.75em; ukuran untuk web*/
+			height: 6em;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+			.tCHead img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		.tCBody {
+			width: 70%;
+			/*padding: 0 0 0 1em; ukuran untuk web*/
+			padding: 0 0 0 0.75em;
+			overflow: ;
+		}
+			.tCBody h2 {
+				margin: 0;
+				font-family: "Work Sans", sans-serif;
+				font-size: 1em;
+				font-weight: 900;
+				line-height: 1.25em;
+				color: #333;
+				overflow: hidden;
+			}
+			.tCBody p {
+				margin: 0.2em 0 0 0;
+				font-family: "EB Garamond", serif;
+				font-size: 0.9em;
+				font-weight: 400;
+				line-height: 1.2em;
+				color: #333;
+
+				height: 2.5em;
+				overflow: hidden;
+			}
+			.tCBDetail {
+				margin: 0.15em 0 0.5em 0;
+				display: flex;
+			}
+				.tCBDetail b {
+					display:;
+					margin: auto 0;
+					font-family: "Work Sans", sans-serif;
+					font-size: 0.5em;
+					font-weight: 900; 
+				}
+				.tCBDetail time {
+					display:;
+					margin: auto 0 auto 0.7em;
+					font-family: "EB Garamond", serif;
+					font-size: 0.5em;
+					font-weight: 400;
+					color: #999A9D;
+				}
 /*===============================*/
+
+/*=============== MAIN CONTENT 2 ===============*/
+
+.mCL2 {width: 100%;}
+.mCR2 {width: 100%;}
+@media (min-width: 992px) {
+	.mCL2 {float: left; width: 70%;}
+	.mCR2 {float: left; width: 30%;}
+}
+/*========== POPULAR CONTENT ==========*/
+.popular {margin: 0;width: 100%;}
+	.pPHead {height: 8em;}
+
+@media (min-width: 992px) {
+.popularPreview {grid-column: span 4;}
+
+}
+/*=====================================*/
+
+.learn {
+	background-color: salmon;
+	margin: 0;
+	width: 100%;
+}
+/*==============================================*/
