@@ -254,10 +254,7 @@
 /*===================*/
 
 /*========= TOP CONTENT =========*/
-.top {
-	width: 100%;
-	margin: 0;
-}
+.top {width: 100%;margin: 0;}
 .topContainer {
 	margin: 0;
 	padding: 0 1em;
@@ -272,10 +269,7 @@
 		border-bottom: 1px solid rgba(0,0,0,0.08);
 		margin-top: 0.5em;
 	}
-	.tCC {
-		display: flex;
-		width: 100%;
-	}
+	.tCC {display: flex;width: 100%;}
 		.tCHead {
 			background-color: #FFF;
 			width: 30%;
@@ -354,9 +348,26 @@
 }
 /*=====================================*/
 
-.learn {
-	background-color: salmon;
+
+/*========== LEARN CONTENT ==========*/
+.learn {margin: 0;width: 100%;}
+.learnContainer {
 	margin: 0;
-	width: 100%;
+	padding: 0 1em;
+	text-decoration: none;
+	list-style: none;
+	border-top: 1px solid rgba(0,0,0,0.08);
 }
+.learnCard {}
+.lCBody {margin-top: 0.4em;}
+	.lCBody h2 {
+		background-color: ;
+		font-size: 1em;
+		line-height: 1.25em;
+	}
+	.lCBDetail b {
+		font-size: 0.5em;
+		font-weight: 900;
+	}
+/*===================================*/
 /*==============================================*/
