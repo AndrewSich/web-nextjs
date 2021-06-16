@@ -378,6 +378,63 @@ export const Main = () => {
 				<div className={styles.mCR2}>
 					<div className={styles.learn}>
 						<h2 className={styles.contentTitle}>Learn Content</h2>
+						<ul className={styles.learnContainer}>
+
+							<li className={styles.preview+" "+styles.learnCard}>
+								<a href="#">
+									<div className={styles.previewHead}>
+										<img src="../../wp-content/2.png" />
+									</div>
+									<div className={styles.previewBody+" "+styles.lCBody}>
+										<h2>What Is Ethereum?</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+										<div className={styles.pBDetail+" "+styles.lCBDetail}>
+											<b>on Internet</b>
+											<button className={styles.readBtn}>read</button>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li className={styles.preview+" "+styles.learnCard}>
+								<a href="#">
+									<div className={styles.previewHead}>
+										<img src="../../wp-content/3.jpg" />
+									</div>
+									<div className={styles.previewBody+" "+styles.lCBody}>
+										<h2>What Is Blockchain?</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+										<div className={styles.pBDetail+" "+styles.lCBDetail}>
+											<b>on Technology</b>
+											<button className={styles.readBtn}>read</button>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li className={styles.preview+" "+styles.learnCard}>
+								<a href="#">
+									<div className={styles.previewHead}>
+										<img src="../../wp-content/5.jpg" />
+									</div>
+									<div className={styles.previewBody+" "+styles.lCBody}>
+										<h2>What Is Polkadot?</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+										<div className={styles.pBDetail+" "+styles.lCBDetail}>
+											<b>on Technology</b>
+											<button className={styles.readBtn}>read</button>
+										</div>
+									</div>
+								</a>
+							</li>
+
+						</ul>
+						<div className={styles.moreBtn}>
+							<a href="#">
+								<b>More Learn</b>
+								<img src="../../svg/caret-right-fill.svg" />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
